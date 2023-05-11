@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국민연금공단-by.ah</title>
+    <link rel="shortcut icon" href="img2/favicon.png">
+    <!-- jq 라이브러리 -->
+    <script src="js/jquery-3.6.4.js"></script>
+    <!-- 사용자 js -->
+    <script src="js/main.js"></script>
+     <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- 사용자 css -->
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+     <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="header_inner">
+                 <div class="header_top">
+                     <div class="logo"><a href="index.html"><img src="img/top_logo.png" alt="로고"></a></div>
+                     <div class="top_right">
+                         <div class="top_search">
+                             <form action="https://search.naver.com/search.naver">
+                                     <input type="text" name="query" value="">
+                                     <button type="submit"><img src="img/i_search.svg" alt="검색하기"></button>
+                             </form>
+                         </div>
+                         <a href="#">전자민원이용(로그인필요)</a>
+                         <div class="select-box">
+                            <select name="select-name">
+                                <option>Language</option>
+                                <option>English</option>
+                                <option>中文</option>
+                                <option>Thailand</option>
+                                <option>Indonesia</option>
+                                <option>Mongolia</option>
+                             </select>
+                         </div>
+                         <ul>
+                             <li><a href="javacript:zoomIn()"><img src="img/plus_icon.png" alt="확대"></a></li>
+                             <li><a href="javacript:zoomOut()"><img src="img/minus_icon.png" alt="축소"></a></li>
+                         </ul>
+                     </div>
+                 </div>
+            </div>
+           <div class="header_nav">
+             <nav>
+                 <div class="nav_inner">
+                      <ul>
+                          <li>
+                              <a href="#">정보공개</a>
+                              <ul class="sub">
+                                  <li><a href="#">사전정보공표</a></li>
+                                  <li><a href="#">정보목록</a></li>
+                                  <li><a href="#">정보공개</a></li>
+                                  <li><a href="#">공개데이터개방</a></li>
+                                  <li><a href="#">자료실</a></li>
+                                  <li><a href="#">사업실명제</a></li>
+                                  <li><a href="#">공시송달</a></li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="#">전자민원</a>
+                              <ul class="sub">
+                                  <li><a href="#">개인민원</a></li>
+                                  <li><a href="#">사업장민원</a></li>
+                                  <li><a href="#">국민연금EDI</a></li>
+                                  <li><a href="#">웹팩스 수신조회</a></li>
+                                  <li><a href="#">지사/직원찾기</a></li>
+                                  <li><a href="#">서식 찾기</a></li>
+                                  <li><a href="#">인터넷 납부</a></li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="#">소통과 참여</a>
+                              <ul class="sub">
+                                  <li><a href="#">고객상담실</a></li>
+                                  <li><a href="#">친절/불친절</a></li>
+                                  <li><a href="#">국민제안</a></li>
+                                  <li><a href="#">국민연금 토론방</a></li>
+                                  <li><a href="#">국민의소리 반영함</a></li>
+                                  <li><a href="#">신고센터</a></li>
+                                  <li><a href="#">국민연금자문단</a></li>
+                                  <li><a href="#">고객서비스 현장</a></li>
+                                  <li><a href="#">정보화산업</a></li>
+                                  <li><a href="#">규제혁신</a></li>
+                                  <li><a href="#">안전신문고</a></li>
+                                  <li><a href="#">NPS기업성장응답센터</a></li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="#">연금소식</a>
+                              <ul class="sub">
+                                  <li><a href="#">새소식</a></li>
+                                  <li><a href="#">보도자료</a></li>
+                                  <li><a href="#">채용안내</a></li>
+                                  <li><a href="#">제5차 재정계산</a></li>
+                                  <li><a href="#">입찰정보</a></li>
+                                  <li><a href="#">지사/센터소식</a></li>
+                                  <li><a href="#">사옥임대 및 시설개방</a></li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="#">연금정보</a>
+                              <ul class="sub">
+                                  <li><a href="#">알기쉬운 국민연금</a></li>
+                                  <li><a href="#">국민연금통계</a></li>
+                                  <li><a href="#">세계의연금제도</a></li>
+                                  <li><a href="#">사회보장협정</a></li>
+                                  <li><a href="#">법령 및 사규(제규정)</a></li>
+                                  <li><a href="#">자료실</a></li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="#">공단소개</a>
+                              <ul class="sub">
+                                  <li><a href="#">이사장</a></li>
+                                  <li><a href="#">비전 및 전략</a></li>
+                                  <li><a href="#">경영진</a></li>
+                                  <li><a href="#">연혁 및 CI</a></li>
+                                  <li><a href="#">조직 및 인원</a></li>
+                                  <li><a href="#">이사회</a></li>
+                                  <li><a href="#">경영공시</a></li>
+                                  <li><a href="#">공단견학</a></li>
+                              </ul>
+                          </li>
+                      </ul>
+    
+                  </div>
+              </nav>
+           </div>
+        </header>
+        <section class="section_1">
+        <div class="main_bg1"></div>
+        <div class="main_bg2"></div>
+        <!-- 메인 -->
+        <section class="main">
+            <div class="main_inner">
+                    <div class="main_left">
+                        <div class="swiper firstSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><a href="#"><img src="img/banner1png.png" alt="2023년 국민연금 5.1% 더 드립니다!"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="img/banner2.png" alt="제5차 재정계산"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="img/banner3.png" alt="국민연금 지역가입자 보험료 지원제도"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="img/banner4.png" alt="홈페이지에서 국민연금 청구 방법"></a></div>
+                            </div>
+                        </div>
+                        <div class="play_button">
+                            <div class="start"></div>
+                            <div class="stop"></div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="main_right">
+                        <h2>자주 찾는 서비스</h2>
+                        <ul>
+                            <li><a href="#" class="ser1 ser">내 연금 <br> 알아보기</a></li>
+                            <li><a href="#" class="ser2 ser">지사찾기</a></li>
+                            <li><a href="#" class="ser3 ser">서식찾기</a></li>
+                            <li><a href="#" class="ser4 ser">4대 보험료 <br> 계산기</a></li>
+                            <li><a href="#" class="ser5 ser">알기쉬운 <br> 국민연금</a></li>
+                            <li><a href="#" class="ser6 ser">웹팩스 <br> 수신조회</a></li>
+                            <li><a href="#" class="ser7 ser">국민연금 <br> 통계</a></li>
+                            <li><a href="#" class="ser8 ser">채용공고</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </section>
+        <!-- 서비스 -->
+        <section class="service">
+            <div class="service_inner">
+                <div class="ser_left">
+                        <h2>개인 서비스</h2>
+                        <div class="ser_menu">
+                            <ul>
+                                <li><a href="#">가입증명서<br>발급</a></li>
+                                <li><a href="#">가입내역<br>조회</a></li>
+                                <li><a href="#">보험료<br>결정내역 조회</a></li>
+                                <li><a href="#">연금산정용가입<br>내역확인서 발급</a></li>
+                                <li><a href="#">연금 / 일시금<br>청구</a></li>
+                                <li><a href="#">전화번호/ <br> 이메일 변경</a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="ser_right">
+                    <div class="ser_button"></div>
+                    <div class="ser_rightbox">
+                        <h1>사업장 서비스</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 뉴스 -->
+        <section class="news">
+            <div class="news_inner">
+                <div class="container">
+                    <ul class="tab_title">
+                        <li class="on1 on">새소식</li>
+                        <li class="on2">보도자료</li>
+                        <li class="on3">채용공고</li>
+                        <li class="on4">입찰공고</li>
+                    </ul>
+                    <div class="tab_cont">
+                        <div class="on">
+                            <div class="swiper newsSwiper">
+                                <div class="swiper-wrapper ">
+                                    <div class="swiper-slide new1"><a href="#"> 2022년 제1차 국민연금 <br> 토론방 토론우수자 선정 및 기념품 당... <br> <span  class="date">2023-02-27</span></a></div>
+                                    <div class="swiper-slide new1"><a href="#" >2022년도 4분기 우수 <br> 국민제안 선정 결과 안내 <br> <span>2023-02-27</span  class="date"></a> </div>
+                                    <div class="swiper-slide new1"><a href="#">2023년도「국민연금 재평가율 및 <br> 연금액 조정」 고시 일부개정 발... <br> <span  class="date">2023-01-19</span></a></div>
+                                    <div class="swiper-slide new1"><a href="#">홈페이지 리뉴얼 오픈(1.30.월.)<span  class="date">2023-01-18</span></a></div>
+                                    <div class="swiper-slide new1"><a href="#">과오납금 예방을 위한 사업장 <br> 적기신고 안내 <br><span  class="date">2022-09-02</span></a></div>
+                                </div>
+                                
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                        </div>
+                        <div class="no">
+                            <div class="swiper newsSwiper">
+                                <div class="swiper-wrapper ">
+                                    <div class="swiper-slide new2"><a href="#">[보도자료] 기금운용 수익률 제고를 <br> 위한 기금운용본부 인사 <span class="new">NEW</span><span class="date">2023-03-15</span></a></div>
+                                    <div class="swiper-slide new2"><a href="#">[보도자료] 국민연금공단, <br> 한국산업기술평가관리원과 업무협약 <br> 체결<span class="new">NEW</span><span class="date">2023-03-15</span></a> </div>
+                                    <div class="swiper-slide new2"><a href="#">[보도자료] 국민연금 국민연금, 청각·<br>언어장애인 위한‘수어 상담 서비스’...<span  class="date">2023-03-14</span></a></div>
+                                    <div class="swiper-slide new2"><a href="#">[보도자료] 국민연금 2022년 수익률 <br> -8.22%…시장 악화...<span class="date">2023-03-02</span></a></div>
+                                    <div class="swiper-slide new2"><a href="#">[보도자료] 국민연금공단, 캄보디아에 <br> 제도운영 경험 전수를 위한...<span class="date">2023-03-01</span></a></div>
+                                </div>
+                                
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                        </div>
+                        <div class="no">
+                            <div class="swiper newsSwiper">
+                                <div class="swiper-wrapper ">
+                                    <div class="swiper-slide new3"><a href="#">국민연금공단 복지이사 초빙 공고<span class="new">NEW</span><span class="date">2023-03-15</span></a></div>
+                                    <div class="swiper-slide new3"><a href="#">[국민연금공단 대전세종지역본부]<br>기간제근로자 공개채용 공고<span class="date">2023-03-07</span></a></div>
+                                    <div class="swiper-slide new3"><a href="#">[국민연금공단 대전세종지역본부]<br>공무직(시설직) 공개채용 공고<span class="date">2023-03-07</span></a></div>
+                                    <div class="swiper-slide new3"><a href="#">[국민연금공단 경인지역본부] 공무직<br>(시설직) 공개채용<span class="date">2023-03-06</span></a></div>
+                                    <div class="swiper-slide new3"><a href="#">국민연금연구원 연구직 공개모집<span class="date">2023-02-24</span></a></div>
+                                </div>
+                                
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                        </div>
+                        <div class="no">
+                            <div class="swiper newsSwiper">
+                                <div class="swiper-wrapper ">
+                                    <div class="swiper-slide new4"><a href="#">국민연금 홍성사옥 신축공사<br>콘크리트파일 구매<span class="date">2023-03-14</span></a></div>
+                                    <div class="swiper-slide new4"><a href="#">2023년 업무용차량 자동차보험 가입<span class="date">2023-03-13</span></a> </div>
+                                    <div class="swiper-slide new4"><a href="#">국민연금 홍성사옥 신축공사<br>콘크리트파일 구매<span class="date">2023-03-08</span></a></div>
+                                    <div class="swiper-slide new4"><a href="#">국민연금 어린이집 증축사업<br>콘크리트파일 구매<span class="date">2023-03-08</span></a></div>
+                                    <div class="swiper-slide new4"><a href="#">국민연금공단 청풍리조트 노후자산<br>매각 공고(4건)<span class="date">2023-03-06</span></a></div>
+                                </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="news_plus"><a href="#">더보기</a></div>
+                </div>
+            </div>
+        </section>
+        <!-- 팝업/sns -->
+        <section class="pop_ser">
+            <div class="ps_inner">
+                <div class="content_ps">
+                <div class="popup">
+                    <h2>팝업존</h2>
+                    <div class="popup_inner">
+                        <div class="ps_left">
+                            <div class="swiper popupSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><a href="#"><img src="img2/viewimage.htm" alt="내곁에 국민연금"></a></div>
+                                    <div class="swiper-slide"><a href="#"><img src="img2/viewimage(1).htm" alt="종합청렴도 평가 결과"></a></div>
+                                    <div class="swiper-slide"><a href="#"><img src="img2/viewimage(2).htm" alt="부정수급"></a></div>
+                                    <div class="swiper-slide"><a href="#"><img src="img2/viewimage(3).htm" alt="적기신고"></a></div>
+                                    <div class="swiper-slide"><a href="#"><img src="img2/viewimage(4).htm" alt="노후긴급자금 대부가 도와드립니다"></a></div>
+                                    <div class="swiper-slide"><a href="#"><img src="img2/viewimage(5).htm" alt="내 손안의 국민비서"></a></div>
+                                </div>
+                            </div>
+                            <div class="play_button">
+                                <div class="start"></div>
+                                <div class="stop"></div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sns">
+                    <div class="sns_inner">
+                        <h2>사회관계망 서비스</h2>
+                        <div id="tab-menu">
+                            <ul>
+                                <li class="active bg"><a href="#" class="on_title">온에어</a>
+                                    <div class="on_bg sns_bg"><h3 class="onair">온에어</h3><div class="txt"><p class="title">국민연금 온에어</p><p class="sub_txt">한 눈에 확인하는 국민연금 SNS 콘텐츠</p></div></div>
+                                </li>
+                                    <li class="bg"><a href="#"  class="b_title">블로그</a>
+                                    <div class="b_bg sns_bg"><h3 class="blog">블로그</h3><div class="txt"><p class="title">국민연금공단 블로그</p><p class="sub_txt">쉽게 보는 국민연금제도 100% 활용법</p></div></div>
+                                </li>
+                                    <li class="bg"><a href="#"  class="you_title">유튜브</a>
+                                    <div class="you_bg sns_bg"><h3 class="youtube">유튜브</h3><div class="txt"><p class="title">국민연금공단 유튜브</p><p class="sub_txt">영상으로 생생하게 만나는 국민연금</p></div></div>
+                                </li>
+                                    <li class="bg"><a href="#"  class="insta_title">인스타그램</a>
+                                    <div class="insta_bg sns_bg"><h3 class="insta">인스타그램</h3><div class="txt"><p class="title">국민연금공단 인스타그램</p><p class="sub_txt">연대리가 소개하는 국민연금 일상</p></div></div>
+                                </li>
+        
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+                </div>
+            </div>
+        </section>
+        </section>
+        <section class="section_2">
+        <div class="section_2_inner">
+            <div class="intro">
+                <div class="intro_left">
+                    <h2>공단소개 및 통계</h2>
+                    <div class="left_item item">
+                        <ul>
+                            <li><a href="#" class="item1">연혁 및 CI</a></li>
+                            <li><a href="#" class="item2">조직 및 인원</a></li>
+                            <li><a href="#" class="item3">경영공시</a></li>
+                            <li><a href="#" class="item4">지사찾기</a></li>
+                            <li><a href="#" class="item5">비전 및 전략</a></li>
+                            <li><a href="#" class="item6">가입 및 급여통계</a></li>
+                            <li><a href="#" class="item7">기금운용통계</a></li>
+                            <li><a href="#" class="item8">전국연금지급통계</a></li>
+                            <li><a href="#" class="item9">연금수급자 기네스</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="intro_right">
+                    <h2>알기 쉬운 국민연금</h2>
+                    <div class="right_item item">
+                        <ul>
+                            <li><a href="#" class="item10">국민연금제도</a></li>
+                            <li><a href="#" class="item11">가입유형</a></li>
+                            <li><a href="#" class="item12">사업장가입자</a></li>
+                            <li><a href="#" class="item13">지역가입자</a></li>
+                            <li><a href="#" class="item14">두루누리</a></li>
+                            <li><a href="#" class="item15">연금종류 및 청구</a></li>
+                            <li><a href="#" class="item16">연금보험료</a></li>
+                            <li><a href="#" class="item17">반환일시금 반납</a></li>
+                            <li><a href="#" class="item18">추후납부</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box_inner1 box_inner" >
+                    <div class="greenbox color">
+                        <h2>장애인 & 복지서비스</h2>
+                        <div class="list_item">
+                            <ul>
+                                <li><a href="#">장애인지원사업 안내</a></li>
+                                <li><a href="#">장애인활동지원</a></li>
+                                <li><a href="#">기초수급자 근로능력평가</a></li>
+                                <li><a href="#">기초연금</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_inner2 box_inner">
+                    <div class="blue_box color">
+                        <h2>국민연금 100문 100답</h2>
+                        <div class="list_item">
+                            <ul>
+                                <li><a href="#">연금제도</a></li>
+                                <li><a href="#">가입 관련</a></li>
+                                <li><a href="#">보험료 부과</a></li>
+                                <li><a href="#">연금 지급</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_inner3 box_inner">
+                    <div class="red_box color">
+                        <h2>제5차 재정계산</h2>
+                        <div class="list_item">
+                            <ul>
+                                <li><a href="#">추진개요</a></li>
+                                <li><a href="#">추진체계</a></li>
+                                <li><a href="#">재정계산위원회</a></li>
+                                <li><a href="#">국민연금 전문가포럼</a></li>
+                                <li><a href="#">보도자료</a></li>
+                                <li><a href="#">영상자료</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col_group">
+                <div class="col col1">
+                    <ul>
+                        <li><a href="#">사회보장협정</a></li>
+                        <li><a href="#">세계의 연금제도</a></li>
+                        <li><a href="#">권리구제 제도 안내</a></li>
+                    </ul>
+                    <div class="onair">
+                        <div class="onair_inner">
+                            <div class="onair_top">
+                            <h2>국민연금 ON AIR</h2>
+                            <span class="plus">더보기</span>
+                        </div>
+                        <div class="onair_bottom">
+                            <ul>
+                                <li><a href="#">국민연금제도</a></li>
+                                <li><a href="#">국민연금 Basic</a></li>
+                                <li><a href="#">전문가 시선</a></li>
+                                <li><a href="#">국민연금 기금</a></li>
+                                <li><a href="#">영상갤러리</a></li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col2">
+                    <div class="video">
+                        <h2>영상으로 보는 국민연금</h2>
+                        <a href="#"><img src="img/main_video_thumbnail.png" alt="유튜브 썸네일"></a>
+                        <p>국민연금공단과 필쩐필승이 만났다!</p>
+                    </div>
+                    <div class="card_news">
+                        <h2>카드뉴스</h2>
+                        <a href="#"><img src="img/main_cardnews2023.png" alt="카드뉴스"></a>
+                    </div>
+                </div>
+                <div class="col col3">
+                    <div class="webzine">
+                        <h2>웹진 '내 곁에 국민연금'</h2>
+                        <p>새롭게 단장한 웹진을 만나보세요.</p>
+                        <ul>
+                            <li><a href="#" class="view">바로보기</a></li>
+                            <li><a href="#" class="subscribe">구독하기</a></li>
+                        </ul>
+                    </div>
+                    <div class="newsletter">
+                        <h2>뉴스레터</h2>
+                        <p>다양한 소식을 메일로 전하는 인터넷 소식지입니다.</p>
+                        <ul>
+                            <li><a href="#" class="view">바로보기</a></li>
+                            <li><a href="#" class="subscribe">구독하기</a></li>
+                        </ul>
+                    </div>
+                    <div class="app">
+                        <h2>내 곁에 국민연금 APP 다운로드</h2>
+                        <ul>
+                            <li><div class="qr_a"><img src="img/qr_android.png" alt="안드로이드qr"><p>Android</p></div></li>
+                            <li><div class="qr_a"><img src="img/qr_ios.png" alt="아이폰qr"><p>iOS</p></div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <div class="quick_menu">
+            <div class="quick_inner">
+                <h2>공단사이트</h2>
+                <ul>
+                    <li><a href="#">전자민원사이트</a></li>
+                    <li><a href="#">중앙노후준비<br>지원센터</a></li>
+                    <li><a href="#">국민연금 EDI</a></li>
+                    <li><a href="#">기금운용본부</a></li>
+                    <li><a href="#">연금수급자</a></li>
+                    <li><a href="#">국민연금연구원</a></li>
+                    <li><a href="#">ESG경영</a></li>
+                    <li><a href="#">장애인활동지원</a></li>
+                    <li><a href="#">스마트 위택스</a></li>
+                    <li><a href="#">어린이</a></li>
+                    <li><a href="#">4대보험정보연계</a></li>
+                    <li><a href="#">기초연금</a></li>
+                    <li><a href="#">두루누리사회보험</a></li>
+                    <li><a href="#">공적연금 연계</a></li>
+                    <li><a href="#">청풍리조트</a></li>
+                </ul>
+                <button type="button" class="btn_more">더보기</button>
+            </div>
+            <div class="go_top">
+                <a id="top" href="#">TOP</a>
+            </div>
+        </div>
+        <footer>
+            <div class="footer_inner">
+                <div class="f_top">
+                    <ul>
+                        <li><em>국민연금 고객센터</em><a href="#">국번없이 <span class="n1">1</span><span class="n2">3</span><span class="n3">55</span>(유료) 해외 +82-63-713-6900 평일 09:00 ~ 18:00</a></li>
+                        <li><a href="#">영상수어상담</a></li>
+                    </ul>
+                </div>
+                <div class="f_middle">
+                    <ul class="m_left">
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">홈페이지 이용안내</a></li>
+                        <li><a href="#">홈페이지 개선의견</a></li>
+                        <li><a href="#">RSS</a></li>
+                        <li><a href="#">찾아오시는 길</a></li>
+                        <li><a href="#">인증서 모바일로 내보내기</a></li>
+                    </ul>
+                    <ul class="m_right">
+                        <li><a href="#" class="fb">페이스북</a></li>
+                        <li><a href="#" class="inst">인스타</a></li>
+                        <li><a href="#" class="yt">유튜브</a></li>
+                        <li><a href="#" class="blog">블로그</a></li>
+                        <li><a href="#" class="post">포스트</a></li>
+                        <li><a href="#" class="onair">온에어</a></li>
+                    </ul>
+                </div>
+                <div class="f_bottom">
+                    <div class="b_left">
+                        <address>54870 전라북도 전주시 덕진구 기지로 180 (만성동, 국민연금)</address>
+                        <p class="guide">매월 마지막 토요일 00:00 ~ 04:00까지는 정기적인 서비스 점검으로 서비스 이용이 일시 중단됩니다. <br>
+                            본 홈페이지에 게시된 이메일 주소가 자동수집되는 것을 허용하지 않으며, 위반시 정보통신망법에 의해 처벌될 수 있습니다.</p>
+                        <p class="copy">copyright ⓒ nps.or.kr. all rights reserved.</p>
+                    </div>
+                    <div class="b_right">
+                       <div class="footer_s_inner">
+                            <div class="footer_select f_s1">
+                                <select title="직원/위원회 관련 사이트">
+                                    <option>직원/위원회</option>
+                                    <option>비상임이사</option>
+                                    <option>심사위원회</option>
+                                    <option>직원용 이메일</option>
+                                    <option>국민참여</option>
+                                    <option>국민연금 자문단</option>
+                                </select>
+                                <button type="button">이동</button>
+                            </div>
+                            <div class="footer_select">
+                                <select title="관련 기관 사이트">
+                                    <option>보건복지부</option>
+                                    <option>국민건강보험공단</option>
+                                    <option>국민연금 EDI</option>
+                                    <option>공적연금 연계</option>
+                                    <option>4대보험 정보연계</option>
+                                    <option>청풍리조트</option>
+                                </select>
+                                <button type="button" class="last">이동</button>
+                            </div>
+                       </div>
+                        <div class="f_img">
+                            <ul>
+                                <li><a href="#"><img src="img/mark_dnv1.png" alt="마크"></a></li>
+                                <li><a href="#"><img src="img/mark_dnv2.png" alt="마크"></a></li>
+                                <li><a href="#"><img src="img/mark_icsi.png" alt="마크"></a></li>
+                                <li><a href="#"><img src="img/mark_wa.png" alt="마크"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+       
+</body>
+</html>
